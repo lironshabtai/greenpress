@@ -20,7 +20,7 @@ mongoose.connection.on('open',async (ref) => {
             console.log(`failed to drop collection: ${collection}, with error: ${err}`)
         }
     }); 
-    //mongoose.disconnect()
+    mongoose.disconnect()
     try {
       await exec(`npm run populate-db`)
     } catch(err) {
