@@ -4,4 +4,5 @@ ENV FRONT_THEME=classic
 EXPOSE $PORT
 COPY ["package.json", "package-lock.json", "./"]
 RUN npm install
+RUN npm install -g npmx
 CMD npm start

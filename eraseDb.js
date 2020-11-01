@@ -13,7 +13,6 @@ mongoose.connection.on('open',async (ref) => {
     })); 
     mongoose.disconnect()
     try {
-      await exec(`npmx pm2 restart content`)
       await exec(`npm run populate-db`)
     } catch(err) {
       console.log(`failed to insert data with error: ${err}`)
