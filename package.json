@@ -19,7 +19,8 @@
     "@greenpress/cli-service-pm2": "0.2.0",
     "@greenpress/content": "^1.0.15",
     "@greenpress/drafts": "^1.0.3",
-    "@greenpress/secrets": "^1.0.6"
+    "@greenpress/secrets": "^1.0.6",
+    "shelljs": "^0.8.4"
   },
   "devDependencies": {
     "nodemon": "^2.0.4"
